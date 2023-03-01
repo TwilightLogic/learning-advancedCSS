@@ -6,3 +6,75 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Leto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+}
+
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  /* 占整个屏幕的95% ⬇️ */
+  height: 95vh;
+  position: relative;
+
+  /* 定义左上角，右上角，右下角，左下角的坐标，我们可以得到一个多边形的header */
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+.text-box {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.74rem;
+}
