@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss css/style.css"
+    "compile:sass": "sass sass/main.scss css/style.css -w"
   },
   "author": "Logic",
   "license": "ISC",
