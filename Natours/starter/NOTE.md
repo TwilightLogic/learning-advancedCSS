@@ -33,3 +33,6 @@ npm install -g sass
 ```sh
 npm run compile:sass
 ```
+
+[ ] OK
+[x] ok
