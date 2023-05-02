@@ -53,10 +53,9 @@ body {
   height: 3.5rem;
 }
 
-/* 
 .logo:hover {
-    animation: moveInRight 1s ease-out;
-  } 
+  animation: moveInRight 1s ease-out;
+}
 
 .header__text-box {
   position: absolute;
@@ -84,23 +83,15 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
 
-    
-    因为用animation后，heading好像会向上颤抖一下，用这个来消除这个向上颤抖
-
-    animation-delay: 3s; 
-    动画效果会发生3次 ⬇️ 
-    animation-iteration-count: 3;
+  // animation-delay: 3s;
+  // animation-iteration-count: 3;
 }
-*/
 
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
-
-  /* animation-name: moveInRight;
-    animation-duration: 1s; */
 
   animation: moveInRight 1s ease-out;
 }
