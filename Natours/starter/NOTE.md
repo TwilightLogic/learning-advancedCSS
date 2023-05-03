@@ -34,5 +34,20 @@ npm install -g sass
 npm run compile:sass
 ```
 
-[ ] OK
-[x] ok
+### Implementing 7-1 CSS Architecture with SASS
+
+7-1 CSS architecture is a popular way of organizing CSS files for large projects. The architecture consists of seven different folders and one main file to import all the other files.
+
+It is designed to handler large multi-page websites or web apps
+
+The seven folders in the 7-1 CSS architecture are:
+
+1. base/: This folder contains styles for HTML elements such as typography, color palettes, and other basic styles.
+2. components/: This folder contains styles for reusable UI components such as buttons, forms, cards, etc.
+3. layout/: This folder contains styles for the overall layout of the page, such as grids, containers, and responsive design.
+4. pages/: This folder contains styles that are specific to individual pages or sections of the website.
+5. themes/: This folder contains styles for different themes or color schemes that the website may have.
+6. utils/: This folder contains utility classes and helper styles, such as margin, padding, and positioning classes.
+7. vendors/: This folder contains styles for third-party libraries or plugins that the website may use.
+
+The main file, usually named styles.scss or main.scss, imports all of these folders in a specific order to ensure that the styles cascade correctly and efficiently.
