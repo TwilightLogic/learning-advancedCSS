@@ -8,4 +8,25 @@
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
+
+  @include clearfix;
+
+  [class^="col-"] {
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+    background-color: orangered;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    background-color: aquamarine;
+    float: left;
+  }
 }

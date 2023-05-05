@@ -74,4 +74,11 @@ The main file, usually named styles.scss or main.scss, imports all of these fold
 
 - To change CSS styles on certain viewport widths (called breakpoints)
 
-What's the difference between `max-width` and `width`?
+> **Attribute Selector**
+> What is `[class^="col-"] {}` in `_grid.scss`?
+>
+> This is an attribute selector in CSS, specifically, it is a value selector that starts with `^=` and selects elements with an attribute value that begins with the specified value.
+>
+> For example, `[class^="col-"]` selects all elements that have a class attribute and whose value starts with col-. This selector is commonly used in grid systems to select column elements with a specific naming convention. For instance, in the Bootstrap grid system, the class attribute of column elements usually starts with col-, such as col-sm-6 representing a column that occupies half the width on small screens. Therefore, `[class^="col-"] `can be used to select all column elements and easily apply style rules to them.
+>
+> It is worth noting that attribute value selectors can use other symbols besides `^=`, such as `$=` for selecting elements with attribute values that end with the specified value, `*=` for selecting elements with attribute values that contain the specified value, and so on. These selectors can all be used to target elements with specific attribute values in practical development.
