@@ -51,3 +51,25 @@ The seven folders in the 7-1 CSS architecture are:
 7. vendors/: This folder contains styles for third-party libraries or plugins that the website may use.
 
 The main file, usually named styles.scss or main.scss, imports all of these folders in a specific order to ensure that the styles cascade correctly and efficiently.
+
+### Responsive Design Principles and Layout Types
+
+1. Fluid Layouts
+
+- To allow webpage to adapt to the current viewport width (or even height)
+- Use `%` (or `vh` / `vw`) unit instead of `px` for elements that should adapt to viewport (usually layout)
+- Use `max-width` instead of `width`
+
+2. Responsive Units
+
+- Use `rem` unit instead of `px` for most lengths
+- To make it easy to scale the entire layout down (or up) automatically
+
+3. Flexible Images
+
+- By default, images don't scale automatically as we change the viewport, so we need to fix that
+- Always use `%` for image dimensions, together with the `max-width` property
+
+4. Media Queries
+
+- To change CSS styles on certain viewport widths (called breakpoints)
