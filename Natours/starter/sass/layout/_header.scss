@@ -12,7 +12,7 @@
   position: relative;
 
   /* 定义左上角，右上角，右下角，左下角的坐标，我们可以得到一个多边形的header */
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {
     position: absolute;

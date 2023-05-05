@@ -93,3 +93,22 @@ What we will learn in this lecture?
 - How to `transform` multiple properties simultaneously
 - How to use the `outline-offset` property together with `outline`
 - How to style elements that are not hovered while others are
+
+#### -webkit-background-clip
+
+We are using `-webkit-background-clip` to make `heading-secondary` to be a gradient background.
+
+Here is an example that demonstrates how to apply the `-webkit-background-clip` property to a `div` element to make the background image only show in the text area:
+
+```css
+div {
+  background-image: url("background.png");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+```
+
+In the code above, the background-image property specifies the background image to be used, and the background-clip and -webkit-background-clip properties specify that the background image is limited to the text area. By setting the text color to transparent, the background image is fully displayed in the text area.
+
+Note that since the -webkit-background-clip property is a non-standard property, it may be deprecated or no longer supported in future browser versions. Therefore, when writing CSS code, it is recommended to avoid using private CSS properties to ensure code compatibility and maintainability.
