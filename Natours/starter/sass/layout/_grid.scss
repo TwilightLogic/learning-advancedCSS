@@ -1,0 +1,11 @@
+.row {
+  max-width: $grid-width;
+  background-color: #eee;
+  margin: 0 auto;
+
+  // Select each rows except the last child
+  // We don't add the margin-bottom to the last row
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+}

@@ -73,3 +73,5 @@ The main file, usually named styles.scss or main.scss, imports all of these fold
 4. Media Queries
 
 - To change CSS styles on certain viewport widths (called breakpoints)
+
+What's the difference between `max-width` and `width`?
