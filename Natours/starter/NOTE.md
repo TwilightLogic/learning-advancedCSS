@@ -125,3 +125,13 @@ In the code above, the `background-image` property specifies the background imag
 > **🚨 Caution**
 >
 > Note that since the `-webkit-background-clip` property is a non-standard property, it may be deprecated or no longer supported in future browser versions. Therefore, when writing CSS code, it is recommended to avoid using private CSS properties to ensure code compatibility and maintainability.
+
+### `border` VS `outline`
+
+The `border` property is part of the box model and **affects the size and shape of an element**. It has several properties such as `width`, `style`, and `color` that you can use to customize the border.
+
+On the other hand, the `outline` property does **not affect the size or shape of an element**, but rather adds a line around the outside of the element's border. It is typically used for visual feedback, such as when an element is focused or selected. The outline property has similar properties to border, such as width and color, but it also has properties like outline-offset that control the distance between the outline and the border.
+
+#### What dose `outline-offset` do?
+
+`outline-offset` is a CSS property that allows us to set the space between an element's border and its outline. It is useful when we want to add a visual boundary around an element using the outline property, but we want to position it in a specific way, such as creating a gap between the outline and the element's border.
