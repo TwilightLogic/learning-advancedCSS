@@ -96,7 +96,7 @@ The main file, usually named styles.scss or main.scss, imports all of these fold
 
 ### 🔨 The "About" Section
 
-**What we will learn in this lecture?**
+**What we will learn in this section?**
 
 - Thinking about components
 - How and why use utility classes
@@ -105,7 +105,7 @@ The main file, usually named styles.scss or main.scss, imports all of these fold
 - How to use the `outline-offset` property together with `outline`
 - How to style elements that are not hovered while others are
 
-### 💡 What is **-webkit-background-clip**?
+#### 💡 What is **-webkit-background-clip**?
 
 We are using `-webkit-background-clip` to make `heading-secondary` to be a gradient background.
 
@@ -126,7 +126,7 @@ In the code above, the `background-image` property specifies the background imag
 >
 > Note that since the `-webkit-background-clip` property is a non-standard property, it may be deprecated or no longer supported in future browser versions. Therefore, when writing CSS code, it is recommended to avoid using private CSS properties to ensure code compatibility and maintainability.
 
-### `border` VS `outline`
+#### `border` VS `outline`
 
 The `border` property is part of the box model and **affects the size and shape of an element**. It has several properties such as `width`, `style`, and `color` that you can use to customize the border.
 
@@ -135,3 +135,18 @@ On the other hand, the `outline` property does **not affect the size or shape of
 #### What dose `outline-offset` do?
 
 `outline-offset` is a CSS property that allows us to set the space between an element's border and its outline. It is useful when we want to add a visual boundary around an element using the outline property, but we want to position it in a specific way, such as creating a gap between the outline and the element's border.
+
+### 🔨 The "Features" Section
+
+**What we will learn in this section?**
+
+- How to include an use an icon font
+- Another way of creating the "skewed section" design
+- How and when to use the direct child selector
+
+> **Notes**
+>
+> **skewed section design** is a common web design style that breaks away from the traditional rectangular layout by tilting or skewing certain sections of a webpage, adding dynamism and visual interest. This design style is often applied to the top, bottom, or dividers of a webpage to highlight important content or to convey a specific theme. To achieve this design effect, the transform property in CSS3 and pseudo-elements are commonly used to skew or tilt elements.
+>
+> **direct child selector**
+> In CSS, the "direct child selector" is represented by the ">" symbol and is used to select only the direct child elements of a parent element.
