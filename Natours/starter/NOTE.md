@@ -1,4 +1,12 @@
-### How to Compile a SCSS File?
+# 📝 Notes for Learning Advanced CSS and SASS #1
+
+- 🌻 Learn from Udemy: **[Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)**
+
+- 🔗 Source code in my **[GitHub](https://github.com/TwilightLogic/learning-advancedCSS)**
+
+## 🌠 Some Basics for CSS and SASS
+
+### 🤔 How to Compile a SCSS File?
 
 ##### 1. Install a compiler or a preprocessor (sass here).
 
@@ -34,7 +42,7 @@ npm install -g sass
 npm run compile:sass
 ```
 
-### Implementing 7-1 CSS Architecture with SASS
+### 🏠 Implementing 7-1 CSS Architecture with SASS
 
 7-1 CSS architecture is a popular way of organizing CSS files for large projects. The architecture consists of seven different folders and one main file to import all the other files.
 
@@ -52,30 +60,31 @@ The seven folders in the 7-1 CSS architecture are:
 
 The main file, usually named styles.scss or main.scss, imports all of these folders in a specific order to ensure that the styles cascade correctly and efficiently.
 
-### Responsive Design Principles and Layout Types
+### ✏️ Responsive Design Principles and Layout Types
 
-1. Fluid Layouts
+##### 1. Fluid Layouts
 
 - To allow webpage to adapt to the current viewport width (or even height)
 - Use `%` (or `vh` / `vw`) unit instead of `px` for elements that should adapt to viewport (usually layout)
 - Use `max-width` instead of `width`
 
-2. Responsive Units
+##### 2. Responsive Units
 
 - Use `rem` unit instead of `px` for most lengths
 - To make it easy to scale the entire layout down (or up) automatically
 
-3. Flexible Images
+##### 3. Flexible Images
 
 - By default, images don't scale automatically as we change the viewport, so we need to fix that
 - Always use `%` for image dimensions, together with the `max-width` property
 
-4. Media Queries
+##### 4. Media Queries
 
 - To change CSS styles on certain viewport widths (called breakpoints)
 
-> **Attribute Selector**
-> What is `[class^="col-"] {}` in `_grid.scss`?
+> 👇🏻 **Attribute Selector**
+>
+> 👾 What is `[class^="col-"] {}` in `_grid.scss`?
 >
 > This is an attribute selector in CSS, specifically, it is a value selector that starts with `^=` and selects elements with an attribute value that begins with the specified value.
 >
@@ -83,9 +92,11 @@ The main file, usually named styles.scss or main.scss, imports all of these fold
 >
 > It is worth noting that attribute value selectors can use other symbols besides `^=`, such as `$=` for selecting elements with attribute values that end with the specified value, `*=` for selecting elements with attribute values that contain the specified value, and so on. These selectors can all be used to target elements with specific attribute values in practical development.
 
-### Building the About Section
+## 🌠 Building "Natours" project
 
-What we will learn in this lecture?
+### 🔨 The "About" Section
+
+**What we will learn in this lecture?**
 
 - Thinking about components
 - How and why use utility classes
@@ -94,7 +105,7 @@ What we will learn in this lecture?
 - How to use the `outline-offset` property together with `outline`
 - How to style elements that are not hovered while others are
 
-#### -webkit-background-clip
+### 💡 What is **-webkit-background-clip**?
 
 We are using `-webkit-background-clip` to make `heading-secondary` to be a gradient background.
 
@@ -109,6 +120,8 @@ div {
 }
 ```
 
-In the code above, the background-image property specifies the background image to be used, and the background-clip and -webkit-background-clip properties specify that the background image is limited to the text area. By setting the text color to transparent, the background image is fully displayed in the text area.
+In the code above, the `background-image` property specifies the background image to be used, and the `background-clip` and `-webkit-background-clip` properties specify that the background image is limited to the text area. By setting the text color to transparent, the background image is fully displayed in the text area.
 
-Note that since the -webkit-background-clip property is a non-standard property, it may be deprecated or no longer supported in future browser versions. Therefore, when writing CSS code, it is recommended to avoid using private CSS properties to ensure code compatibility and maintainability.
+> **🚨 Caution**
+>
+> Note that since the `-webkit-background-clip` property is a non-standard property, it may be deprecated or no longer supported in future browser versions. Therefore, when writing CSS code, it is recommended to avoid using private CSS properties to ensure code compatibility and maintainability.
