@@ -14,4 +14,11 @@
     ),
     url(../img/nat-4.jpg);
   background-size: cover;
+
+  transform: skewY(-7deg);
+
+  // `.section-features > *` which is the `.row` class
+  & > * {
+    transform: skewY(7deg);
+  }
 }
