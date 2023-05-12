@@ -150,3 +150,13 @@ On the other hand, the `outline` property does **not affect the size or shape of
 >
 > **direct child selector**
 > In CSS, the "direct child selector" is represented by the ">" symbol and is used to select only the direct child elements of a parent element.
+
+### 🔨 The "Tours" Section
+
+**What we will learn in this section?**
+
+- How to build an amazing, rotating card
+- How to use `perspective` in CSS
+- How to use `backface-visibility` property
+- Using background blend modes
+- How and when to use `box-decoration-break`
