@@ -160,3 +160,15 @@ On the other hand, the `outline` property does **not affect the size or shape of
 - How to use `backface-visibility` property
 - Using background blend modes
 - How and when to use `box-decoration-break`
+
+#### `backface-visibility` property
+
+The backface-visibility property in CSS is used to control whether the back face of an element should be visible or hidden when it is rotated or transformed in 3D space.
+
+Here's how the backface-visibility property works:
+
+- By default, the back face of an element is visible.
+- Setting backface-visibility: hidden hides the back face of the element.
+- This property is useful when you apply 3D transformations, such as rotations, to an element and - want to prevent the back face from being visible.
+- It applies to an element and its children.
+- It can be inherited from parent elements.
